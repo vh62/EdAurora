@@ -7,6 +7,6 @@ e.g npm stuff
 
 ## Database 
 
-Database:
-  db_name: login_db
+Database: <br>
+  db_name: login_db <br>
   collection name: users
