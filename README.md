@@ -7,4 +7,6 @@ e.g npm stuff
 
 ## Database 
 
-Database: Login Details
+Database:
+  db_name: login_db
+  collection name: users
