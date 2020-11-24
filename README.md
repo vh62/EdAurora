@@ -17,10 +17,6 @@ npm install npm@latest -g
 
 ## Database 
 
-Database: <br>
-  db_name: login_db <br>
-  collection name: users
-
 
 ## Links and Tutorials to get you started
 
