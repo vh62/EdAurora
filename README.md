@@ -2,7 +2,17 @@
 EdAurora Code
 
 ## Dependencies
-e.g npm stuff
+Check if you have node.js install 
+
+node -v 
+
+Check if you have npm install
+
+npm -v
+
+Install npm 
+
+npm install npm@latest -g
 
 
 ## Database 
