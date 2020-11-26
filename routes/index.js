@@ -1,19 +1,13 @@
-const express = require('express')
-const router = express.Router(); 
+const express = require('express');
+const router = express.Router();
+const { ensureAuthenticated } = require('../config/auth');
+//Welcome page
+router.get('/', (req,res)=> res.render('welcome'));
 
+//DashBoard
+router.get('/dashboard', ensureAuthenticated , (req,res)=> res.render('dashBoard', {
+    name: req.user.name
+}));
+    
+module.exports = router; 
 
-router.get('/',(req, res)=>{
-    res.render('index');
-});
-
-router.get('/login',(req, res)=>{
-    res.render('login.ejs')
-})
-
-router.get('/register',(req, res)=>{
-    res.render('register.ejs')
-})
-// router.post('/',(req, res)=>{
-//     console.log(req.body);
-// });
-module.exports = router;
